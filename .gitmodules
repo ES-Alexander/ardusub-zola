@@ -1,27 +1,7 @@
 [submodule "themes/adidoks"]
 	path = themes/adidoks
 	url = https://github.com/ES-Alexander/adidoks.git
-[submodule "BlueOS-1.0"]
-	path = content/blueos/1.0
-	url = https://github.com/bluerobotics/ardusub-zola.git
-	branch = BlueOS-1.0
-[submodule "content/software/onboard/BlueOS-1.1"]
-	path = content/blueos/1.1
-	url = https://github.com/bluerobotics/ardusub-zola.git
-	branch = BlueOS-1.1
-[submodule "content/hardware"]
-	path = content/hardware
-	url = https://github.com/bluerobotics/ardusub-zola
-	branch = Hardware
-[submodule "content/integrations"]
-	path = content/integrations
-	url = https://github.com/bluerobotics/ardusub-zola
-	branch = Integrations
-[submodule "content/extensions/cockpit/1.0"]
-	path = content/extensions/cockpit/1.0
-	url = https://github.com/bluerobotics/ardusub-zola
-	branch = Cockpit-1.0
-[submodule "content/blueos/1.2"]
-	path = content/blueos/1.2
-	url = https://github.com/bluerobotics/ardusub-zola
-	branch = BlueOS-1.2
+[submodule "content/latest"]
+	path = content/latest
+	url = https://ES-Alexander@github.com/ES-Alexander/ardusub-zola
+	branch = BlueOS-new-structure
