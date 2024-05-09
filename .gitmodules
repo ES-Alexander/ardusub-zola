@@ -1,0 +1,4 @@
+[submodule "integrations/hardware"]
+	path = integrations/hardware
+	url = https://github.com/bluerobotics/ardusub-zola
+	branch = Hardware

@@ -6,7 +6,7 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 0
 draft = false
-aliases = ['/software/onboard/BlueOS-latest/overview', '/blueos/latest/overview']
+aliases = ['/blueos/latest/overview', '/blueos/latest/usage/overview']
 
 [extra]
 lead = 'BlueOS is a modular, robust, and efficient platform for managing a vehicle or robot from its onboard computer.'
@@ -76,8 +76,8 @@ BlueOS has almost all features from the old Companion, and several hotly-request
 
 | Feature | BlueOS 1.2 | BlueOS 1.1 | BlueOS 1.0 | Companion |
 |---|---|---|---|---|
-| [**Onboard Computer**](@/hardware/required/onboard-computer/index.md) | &rarr; | &rarr;<br>+ Other Linux-based SBCs images to come | + Raspberry Pi 3B / 3B+ / 4B supported<br>+ You can install from scratch using the installation script in any Linux computer. (Modifications may be necessary for your hardware configuration) | Raspberry Pi 3B required |
-| [**Flight Controller**](@/hardware/required/flight-controller/index.md) | &rarr; | &rarr;<br>+ Cube Orange<br>+ Pixhawk 6X | &rarr;<br>+ Navigator<br>+ Pixhawk 4 | Pixhawk |
+| [**Onboard Computer**](../../integrations/hardware/required/onboard-computer/index.md) | &rarr; | &rarr;<br>+ Other Linux-based SBCs images to come | + Raspberry Pi 3B / 3B+ / 4B supported<br>+ You can install from scratch using the installation script in any Linux computer. (Modifications may be necessary for your hardware configuration) | Raspberry Pi 3B required |
+| [**Flight Controller**](../../integrations/hardware/required/flight-controller/index.md) | &rarr; | &rarr;<br>+ Cube Orange<br>+ Pixhawk 6X | &rarr;<br>+ Navigator<br>+ Pixhawk 4 | Pixhawk |
 | [**Video Streams**](../advanced-usage/#video-streams) | &rarr; | &rarr;<br>+ MPEG and YUYV encodings<br><br>+ Supports Raspberry Pi cameras | + Easily manage *multiple streams*<br><br>+ UDP and RTSP outputs<br><br>- Audio streaming<br>*not yet supported* ([#990](https://github.com/bluerobotics/BlueOS-docker/issues/990)) | Select a *single* camera to stream over UDP<br>+ Supports Raspberry Pi cameras ([except HQ Camera](https://discuss.bluerobotics.com/t/raspberry-pi-camera-stream-not-working/11976/18))<br>+ Supports a single audio stream over UDP |
 | [**WIFI Manager**](../advanced-usage/#indicators-and-network-configuration) | &rarr; | &rarr;<br>+ Vehicle provides local hotspot | &rarr;<br>+ Connect to and manage *multiple networks*, like a cellphone or computer WIFI manager | Connect to a *single network*<br>+ Visible and hidden networks supported |
 | [**Ethernet Manager**](../advanced-usage/#indicators-and-network-configuration) | &rarr; | &rarr; | *Multiple* static IPs *and* DHCP configuration | *Single* DHCP (client or server) *or* static network |

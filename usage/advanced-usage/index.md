@@ -6,7 +6,7 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 30
 draft = false
-aliases = ['/software/onboard/BlueOS-latest/advanced-usage', '/blueos/latest/advanced-usage']
+aliases = ['/blueos/latest/advanced-usage', '/blueos/latest/usage/advanced-usage']
 
 [extra]
 lead = ''
@@ -246,7 +246,7 @@ autopilot, along with options to:
       - Upload a custom firmware file from the surface computer
       - Restore the default (ArduSub) firmware for the connected flight controller
    - Flash firmware onto a connected compatible
-   [flight controller board](@/hardware/required/flight-controller/index.md)
+   [flight controller board](../../integrations/hardware/required/flight-controller/index.md)
 
 {{ simple_pirate_image(src="firmware", width=600) }}
 
@@ -376,7 +376,7 @@ loopback IP `127.0.0.1`
    - e.g. `0.0.0.0`
    - `192.168.2.2` may also work
 - Client endpoints for external use are configured to the external IP
-   - e.g. `192.168.2.1` for connecting to a UDP server on the [Control Station Computer](@/hardware/required/control-computer/index.md)
+   - e.g. `192.168.2.1` for connecting to a UDP server on the [Control Station Computer](../../integrations/hardware/required/control-computer/index.md)
 - Client endpoints seem to operate more stably than server ones
 - Unprotected endpoints can be removed or disabled
 - Modifying an endpoint is not possible - a new one must be created instead
@@ -443,10 +443,10 @@ for the component that will send the location data to the vehicle
 `New in 1.1`
 
 The Ping Sonar Devices page shows any detected 
-[sonars](@/hardware/additional/sonars/index.md) from the Ping family,
+[sonars](../../integrations/hardware/additional/sonars/index.md) from the Ping family,
 including [ethernet-configured Ping360s](https://bluerobotics.com/learn/changing-communications-interface-on-the-ping360/#wiring-connections--ethernet-configuration)
 that are visible on the local network (e.g. via an 
-[Ethernet Switch](@/hardware/additional/ethernet-switch/index.md)).
+[Ethernet Switch](../../integrations/hardware/additional/ethernet-switch/index.md)).
 
 - Allows configuring Ping Sonar distance estimates to send as MAVLink
 [`DISTANCE_SENSOR`](https://mavlink.io/en/messages/common.html#DISTANCE_SENSOR)
@@ -474,7 +474,7 @@ For making connections to the autopilot, see [MAVLink Endpoints](#mavlink-endpoi
 {{ easy_image(src="serial-bridges", width=600, class="pirate") }}
 {% pirate() %}
 - **NOTE:** UDP-based systems do not guarantee packet delivery or sequential alignment
-- Bridges to the [Control Station Computer](@/hardware/required/control-computer/index.md)
+- Bridges to the [Control Station Computer](../../integrations/hardware/required/control-computer/index.md)
   will generally use the localhost IP `0.0.0.0`, which creates a UDP server that waits
   for a UDP client on the control computer to connect to it
    - other IP addesses create a UDP client on the onboard computer, which expects the

@@ -90,7 +90,7 @@ The services built into BlueOS are as follows:
 
 ### Adding a Flight Controller
 
-Adding USB detection support for a new type of [flight controller board](@/hardware/required/flight-controller/index.md) is reasonably straightforward, but does require a few different steps:
+Adding USB detection support for a new type of [flight controller board](../../integrations/hardware/required/flight-controller/index.md) is reasonably straightforward, but does require a few different steps:
 
 #### Find the USB device information
 
@@ -116,7 +116,7 @@ Adding USB detection support for a new type of [flight controller board](@/hardw
     - You'll need a GitHub account to do this
 1. Click where it says `master`, and create a new branch (e.g. `add-pixhawk-6C`)
 1. Navigate to `core/services/ardupilot_manager/typedefs.py` and add your board's name and type to the `Platform` class
-    - Use `PlatformType.Serial` for USB/serial connections - `Linux` is reserved for sensor/peripheral expansion boards that run the autopilot firmware directly on the [Onboard Computer](@/hardware/required/onboard-computer/index.md)
+    - Use `PlatformType.Serial` for USB/serial connections - `Linux` is reserved for sensor/peripheral expansion boards that run the autopilot firmware directly on the [Onboard Computer](../../integrations/hardware/required/onboard-computer/index.md)
 1. Navigate to `core/services/ardupilot_manager/flight_controller_detector/board_identification.py` and add appropriate `SerialBoardIdentifier` instances to the `identifiers` list (using the "product" and "manufacturer" values from earlier)
     - The "product" is more important/useful, because one "manufacturer" can make multiple different board types
 1. Navigate to `core/services/ardupilot_manager/firmware/FirmwareInstall.py` and add your board to the `get_board_id` function (using the `APJ_BOARD_ID` value from earlier)

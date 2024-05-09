@@ -334,7 +334,7 @@ Different types of Extensions have different functionality, and there are often 
    1. The fetched information is then compiled and published to the [Manifest file](https://github.com/bluerobotics/BlueOS-Extensions-Repository/gh-pages/manifest.json) in the `gh-pages` branch
    
 #### Installed Extensions
-Once installed on the [Onboard Computer](@/hardware/required/onboard-computer/index.md), Extensions are stored at `/var/lib/docker` in the file-system, but should be managed through the BlueOS [Extensions Manager](../../advanced-usage/#extensions-manager).
+Once installed on the [Onboard Computer](../../integrations/hardware/required/onboard-computer/index.md), Extensions are stored at `/var/lib/docker` in the file-system, but should be managed through the BlueOS [Extensions Manager](../../advanced-usage/#extensions-manager).
 
 
 ### Ecosystem Attributes

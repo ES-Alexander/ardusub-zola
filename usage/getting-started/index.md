@@ -6,7 +6,7 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 20
 draft = false
-aliases = ['/software/onboard/BlueOS-latest/getting-started', '/blueos/latest/getting-started']
+aliases = ['/blueos/latest/getting-started', '/blueos/latest/usage/getting-started']
 
 [extra]
 lead = ''
@@ -125,7 +125,7 @@ Additional information is available in the Advanced Usage [Video Streams](../adv
 ## USB OTG
 It is possible to connect with a Raspberry Pi 4 through its USB-C port[^1]. Once it's connected, the interface should be available though [blueos.local](http://blueos.local)[^2].
 
-[^1]:A Raspberry Pi draws more power than many computer USB ports can provide, so a USB-C connection should generally only be used for data transfer, with a separate [power supply](@/hardware/required/power-supply/index.md) (or through a powered USB hub).
+[^1]:A Raspberry Pi draws more power than many computer USB ports can provide, so a USB-C connection should generally only be used for data transfer, with a separate [power supply](../../integrations/hardware/required/power-supply/index.md) (or through a powered USB hub).
 
 [^2]:The `usb0` network interface is configured to use a DHCP server at `192.168.3.1` by default, which does **not** provide access via the [192.168.2.2](http://192.168.2.2) static IP address.
 
